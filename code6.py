@@ -46,3 +46,5 @@ result_df.show()
 result_df.coalesce(1).write.csv(output_csv_path, header=True, mode='overwrite')
 
 spark.stop()
+
+#Ура работает! Выводит столько же строк, как и в postgresql. Вывод информации в консоль и экспорт в CSV файл в папку contracts_by_region_export_pyspark.
